@@ -1,7 +1,9 @@
+package frontendSelenium;
+
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import pages.*;
+import frontendSelenium.pages.*;
 
 import static org.junit.Assert.assertTrue;
 

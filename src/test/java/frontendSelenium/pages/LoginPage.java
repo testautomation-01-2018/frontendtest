@@ -1,28 +1,25 @@
-package pages;
+package frontendSelenium.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class MainLoginPage extends BasePage {
+public class LoginPage extends BasePage{
 
     WebDriver driver;
 
-    public MainLoginPage(WebDriver driver) {
+    public LoginPage(WebDriver driver) {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-//    @FindBy()
-//    public WebElement
+    @FindBy(id = "usernameOrEmail")
+    public WebElement usernameInput;
 
-
-    public boolean isContentPage(){
-
-        return true;
-    }
+    @FindBy(css = ".button.form-button.is-primary")
+    public WebElement buttonContinue;
 
 
 }
